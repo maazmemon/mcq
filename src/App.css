@@ -1,0 +1,111 @@
+* {
+  background: url("img.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.name {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: none;
+  transform: translateX(-50%);
+  color: aqua;
+}
+.body {
+  margin-left: 33%;
+  width: 30%;
+  color: white;
+  padding: 2rem;
+  background: none;
+  background-color: rgba(93, 193, 236, 0.558);
+  margin-top: 15%;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.form {
+  color: white;
+  background: none;
+}
+
+.text {
+  color: white;
+  background: none;
+}
+
+.input {
+  color: white;
+  background: none;
+}
+
+.input label {
+  color: white;
+  background: none;
+}
+
+.body button {
+  border: 2px solid black;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 80%;
+  font-size: large;
+  background: none;
+  border-radius: 10px;
+}
+
+.body button:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  background-color: darkblue;
+  color: white;
+}
+
+.form p {
+  color: white;
+  background: none;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  width: 110px;
+  height: 110px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  * {
+    background-size: cover;
+  }
+  .body {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    margin: 0;
+  }
+
+  .name {
+    position: absolute;
+    top: 0;
+    font-size: 1.2rem;
+    left: 50%;
+    background: none;
+    transform: translateX(-50%);
+    color: aqua;
+  }
+  .text {
+    font-size: 1rem;
+  }
+
+  .body button {
+    position: relative;
+    right: 10%;
+    transform: translateX(-50%);
+  }
+}
